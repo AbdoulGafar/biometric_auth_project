@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+        
+        <div class="main-container">
+            <div class="form-container">
+            <div class="header-text">S'enregistrer avec la biométrie</div>
+            <!-- Passage will populate this div with a complete authentication UI/UX -->
+            <!-- <passage-auth app-id="{{ psg_app_id }}"></passage-auth> -->
+            <!-- <script src="https://cdn.passage.id/passage-web.js"></script> -->
+            <passage-register app-id="{{ psg_app_id }}"></passage-register>
+            <script src="https://psg.so/web.js"></script>
+        </div>
+    </div>
+    
+{% endblock content %}
